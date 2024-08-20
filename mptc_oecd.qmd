@@ -51,7 +51,8 @@ df_plot <- df |>
   group_by(country) |> 
   mutate(
     us_flag = ifelse(iso3 == "USA", "United States", "Eighteen OECD Countries"), 
-    avg_spend = slider::slide_dbl(health_ppp, mean, .before = 3)) 
+    avg_spend = slider::slide_dbl(health_ppp, mean, 
+                                  .before = 1, .after = 1)) 
 
 df_plot  
 ```
