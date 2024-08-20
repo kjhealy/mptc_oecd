@@ -1,0 +1,8 @@
+---
+title: "OECD Graph Sample Project"
+author: "Kieran Healy"
+format: gfm
+---
+
+A small sample project to kick things off in the MPTC class. 
+
