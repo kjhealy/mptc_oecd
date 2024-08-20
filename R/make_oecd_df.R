@@ -39,11 +39,13 @@ df <- bind_rows(lifexp_df, health_df) |>
   arrange(REF_AREA, TIME_PERIOD) |>
   left_join(iso3, join_by(REF_AREA == iso3)) |>
   janitor::clean_names() |>
-  rename(iso3 = ref_area,
-         year = time_period,
-         life_exp = lfexp,
-         health_ppp = exp_health,
-         country = cname) |>
+  rename(
+    iso3 = ref_area,
+    year = time_period,
+    life_exp = lfexp,
+    health_ppp = exp_health,
+    country = cname
+  ) |>
   relocate(country) |>
   mutate(year = as.integer(year))
 
