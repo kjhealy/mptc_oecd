@@ -28,7 +28,7 @@ my_colors <-  c("grey50", "firebrick")
 
 ## The Data
 
-We're working in this little project, so our local data files and our output is defined with respect to where the project is on our computer. In R, the `{{here}}` package helps us stay disciplined about this. 
+We're working in this little project, so our local data files and our output is defined with respect to where the project is on our computer. In R, the `here` package helps us stay disciplined about this. 
 
 ```{r}
 library(here)
